@@ -1,3 +1,7 @@
+:root {
+--sidebar-size: 250px;
+}
+
 nav.navbar {
   background: var(--clr-nav);
   width: 100%;
@@ -8,7 +12,7 @@ nav.navbar {
 }
 
 .ham {
-  background: none;
+  background: var(--clr-nav);
   border: none;
   margin-left: .5em;
 }
@@ -30,13 +34,27 @@ nav.navbar {
   text-decoration: none;
 }
 
+
 .nav-links {
   width: 100%;
   display: none;
   flex-direction: column;
   list-style: none;
-  width: 90%;
   margin: 0 auto;
+
+  width: var(--sidebar-size);
+  height: 100vh;
+  position: absolute;
+
+  background: var(--clr-nav);
+}
+
+.ham-transform {
+  transform: translateX(calc(var(--sidebar-size) - 10px));
+}
+
+.nav-links-show {
+  display: flex;
 }
 
 .nav-links li {
@@ -57,7 +75,11 @@ nav.navbar {
 
 @media only screen and (min-width: 750px) {
   .nav-links {
+    width: 90%;
+    height: auto;
     display: flex;
+    position: static;
+    background-color: transparent;
   }
 
   .post-content {
