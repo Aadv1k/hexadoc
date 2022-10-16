@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  --font-sans: 'Roboto', Helvetica, sans-serif;
-  --font-serif: 'Roboto Slab', Georgia, 'Times New Roman', serif;
-  --font-mono: 'Roboto Mono', monospace;
+  --font-mono: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  --font-sans: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-serif: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
 
   --clr-banner: #2980b9;
-
 
   --clr-aside: #1e1f23;
   --clr-nav: #2c2d31;
@@ -15,6 +14,18 @@
   --clr-text: #adb5bd;
   --clr-head: white;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-nav: #2c2d31;
+    --clr-aside: var(--clr-nav);
+    --clr-bg: #f3f1f1;
+
+    --clr-text: white;
+    --clr-head: black;
+  }
+}
+
 
 * {
   margin: 0;
