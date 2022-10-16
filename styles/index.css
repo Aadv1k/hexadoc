@@ -10,20 +10,25 @@
   --clr-bg: #15161a;
 
   --clr-text: #adb5bd;
-  --clr-head: white;
+  --clr-heading: white;
+
+  --clr-code: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
+
+@media (prefers-color-scheme: light) {
   :root {
-    --clr-nav: #2c2d31;
-    --clr-aside: var(--clr-nav);
     --clr-bg: #f3f1f1;
 
-    --clr-text: white;
-    --clr-head: black;
+    --clr-text: black;
+    --clr-heading: black;
   }
 }
 
+
+svg {
+  fill: var(--clr-code);
+}
 
 footer {
     position: absolute;
@@ -45,7 +50,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--font-serif);
-  color: var(--clr-head);
+  color: var(--clr-heading);
   margin-block: 1em;
 }
 
@@ -59,6 +64,7 @@ h2 {
 h3 {
   font-size: 1.3em;
 }
+
 .post-content ul, .post-content ol {
   margin-left: 1.5em;
 }
@@ -79,6 +85,7 @@ code {
   border-radius: 1px;
   font-size: .9em;
   margin-inline: .2em;
+  color: var(--clr-code);
 }
 
 .post-content p, .post-content li {
