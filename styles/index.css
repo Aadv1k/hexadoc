@@ -1,7 +1,9 @@
 :root {
-  --font-mono: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-  --font-sans: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-serif: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-mono: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  --font-sans: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --font-serif: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 
   --clr-banner: #2980b9;
 
@@ -15,7 +17,6 @@
   --clr-code: #fff;
 }
 
-
 @media (prefers-color-scheme: light) {
   :root {
     --clr-bg: #f3f1f1;
@@ -25,16 +26,15 @@
   }
 }
 
-
 svg {
   fill: var(--clr-code);
 }
 
 footer {
-    position: absolute;
-    bottom: auto;
-    font-size: 0.9em;
-    margin-block: 1em;
+  position: absolute;
+  bottom: auto;
+  font-size: 0.9em;
+  margin-block: 1em;
 }
 
 * {
@@ -42,13 +42,18 @@ footer {
   padding: 0;
   color: var(--clr-text);
   font-family: var(--font-sans);
-} 
+}
 
 body {
   background: var(--clr-bg);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
   color: var(--clr-heading);
   margin-block: 1em;
@@ -65,7 +70,8 @@ h3 {
   font-size: 1.3em;
 }
 
-.post-content ul, .post-content ol {
+.post-content ul,
+.post-content ol {
   margin-left: 1.5em;
 }
 
@@ -73,7 +79,7 @@ pre {
   background: var(--clr-aside);
   border-radius: 2px;
   margin-block: 1em;
-  padding: .2em .5em;
+  padding: 0.2em 0.5em;
   overflow: auto;
   max-width: 900px;
 }
@@ -81,15 +87,16 @@ pre {
 code {
   font-family: var(--font-mono);
   background: var(--clr-aside);
-  padding: .1em;
+  padding: 0.1em;
   border-radius: 1px;
-  font-size: .9em;
-  margin-inline: .2em;
+  font-size: 0.9em;
+  margin-inline: 0.2em;
   color: var(--clr-code);
 }
 
-.post-content p, .post-content li {
-  margin-block: .5em;
+.post-content p,
+.post-content li {
+  margin-block: 0.5em;
 }
 
 .post-content p {
